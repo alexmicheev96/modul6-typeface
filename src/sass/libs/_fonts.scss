@@ -1,0 +1,112 @@
+@font-face {
+    font-family: 'IBM Plex Sans';
+    src: url('../fonts/IBMPlexSans.eot');
+    src: url('../fonts/IBMPlexSans.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/IBMPlexSans.woff') format('woff'),
+    url('../fonts/IBMPlexSans.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+    }
+@font-face {
+    font-family: 'IBM Plex Sans';
+    src: url('../fonts/IBMPlexSans-Medium.eot');
+    src: url('../fonts/IBMPlexSans-Medium.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/IBMPlexSans-Medium.woff') format('woff'),
+    url('../fonts/IBMPlexSans-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'IBM Plex Sans';
+    src: url('../fonts/IBMPlexSans-SemiBold.eot');
+    src: url('../fonts/IBMPlexSans-SemiBold.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/IBMPlexSans-SemiBold.woff') format('woff'),
+    url('../fonts/IBMPlexSans-S../fonts/emiBold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+}
+@font-face {
+  font-family: 'icomoon';
+  src:  url('../fonts/icomoon.eot?to5hcz');
+  src:  url('../fonts/icomoon.eot?to5hcz#iefix') format('embedded-opentype'),
+    url('../fonts/icomoon.ttf?to5hcz') format('truetype'),
+    url('../fonts/icomoon.woff?to5hcz') format('woff'),
+    url('../fonts/icomoon.svg?to5hcz#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-th-menu:before {
+  content: "\e90e";
+}
+.icon-arrow-left:before {
+  content: "\e900";
+}
+.icon-arrow-right:before {
+  content: "\e901";
+}
+.icon-arrow-up:before {
+  content: "\e902";
+}
+.icon-check:before {
+  content: "\e903";
+}
+.icon-circle1:before {
+  content: "\e908";
+}
+.icon-minus:before {
+  content: "\e905";
+}
+.icon-plus:before {
+  content: "\1f5f8";
+}
+.icon-share-2:before {
+  content: "\e906";
+}
+.icon-x:before {
+  content: "\e904";
+}
+.icon-circle:before {
+  content: "\e90b";
+}
+.icon-add:before {
+  content: "\e90c";
+}
+.icon-controller-record:before {
+  content: "\e907";
+}
+.icon-controller-stop:before {
+  content: "\e909";
+}
+.icon-circle11:before {
+  content: "\e90a";
+}
+.icon-stop2:before {
+  content: "\ea1e";
+}
+.icon-arrow-right:before {
+  content: "\e901";
+}
+.icon-arrow-up:before {
+  content: "\e902";
+}
+.icon-git-square:before {
+  content: "\e90d";
+}

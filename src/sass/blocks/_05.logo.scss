@@ -1,0 +1,11 @@
+.logo {
+    &__wrapper {
+        display: flex;
+        gap: 3.75rem;
+    }
+    &__item {
+        display: block;
+        flex: 0 1 178px;
+        text-decoration: none;
+    }
+}

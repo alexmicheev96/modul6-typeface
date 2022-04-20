@@ -1,0 +1,58 @@
+.popover {
+    &__wrapper {
+        width: 95%;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+        gap: 1.875rem;
+    }
+    &__inner {
+        display: flex;
+        flex-direction: column;
+        gap: 1.875rem;
+    }
+    &__item {
+        padding: 1.14em;
+        border-radius: 8px;
+        position: relative;
+        &::before {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 0;
+            border: 0.725rem solid;
+            border-color: green green transparent transparent;
+            border-top-right-radius: 4px;
+            z-index: 1;
+        }
+        &_first-line {
+            &::before {
+                top: -0.625rem;
+            }
+        }
+        &_second-line {
+            &::before {
+                right: -0.625rem;
+            }
+            
+        }
+        &_third-line {
+            &::before {
+                bottom: -0.625rem;
+            }
+            
+        }
+        &_fourth-line {
+            &::before {
+                left: -0.625rem;
+            }
+            
+        }
+
+    }
+    &__title {
+        font-weight: 500;
+    }
+    &__descr {
+        margin-top: 4px;
+    }
+}

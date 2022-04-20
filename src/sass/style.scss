@@ -1,21 +1,47 @@
 @import 'libs/bootstrap-reboot.min';
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700;900&display=swap');
+@import 'libs/fonts';
 @import 'base/mixin';
 @import 'base/variables';
-
+@import 'blocks/textsize';
+@import 'blocks/general';
+@import 'blocks/01.typeface';
+@import 'blocks/02.colors';
+@import 'blocks/03.icons';
+@import 'blocks/04.form';
+@import 'blocks/05.logo';
+@import 'blocks/06.avatars';
+@import 'blocks/07.rating';
+@import 'blocks/08.popover';
+@import 'blocks/09.tooltip';
+@import 'blocks/10.misc';
+@import 'blocks/11.type-scale';
+@import 'blocks/12.headers';
+@import 'blocks/13.flaps';
+@import 'blocks/14.modal';
+@import 'blocks/15.callouts';
+@import 'blocks/16.charts';
+@import 'blocks/17.cards';
+@import 'blocks/18.forms';
 
 
 
 * {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'IBM Plex Sans', sans-serif;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+body {
+    background-color: $tint-color; 
+}
 .container {
     position: relative;
-    width: 1140px;
+    width: 1440px;
+    padding: 0 60px;
     margin: 0 auto;
 }
-
+.hide {
+    display: none;
+}
+@import 'blocks/condition';
 @import 'blocks/media';

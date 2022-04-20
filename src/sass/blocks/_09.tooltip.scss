@@ -1,0 +1,56 @@
+.tooltip {
+    &__wrapper {
+        width: 69%;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(116px, 1fr));
+
+        gap: 1.875rem;
+    }
+    &__inner {
+        display: flex;
+        flex-direction: column;
+        gap: 1.875rem;
+    }
+    &__item {
+        position: relative;
+        border-radius: 4px;
+        padding: 0.5em 0.7em;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        // padding: 7px 10px;
+        &::before {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 0;
+            border: 0.5125rem solid;
+            border-color: green green transparent transparent;
+            border-top-right-radius: 4px;
+            z-index: 1;
+        }
+        &_first-line {
+            &::before {
+                top: -0.3125rem;
+            }
+        }
+        &_second-line {
+            &::before {
+                right: -0.3125rem;
+            }
+            
+        }
+        &_third-line {
+            &::before {
+                bottom: -0.3125rem;
+            }
+            
+        }
+        &_fourth-line {
+            &::before {
+                left: -0.3125rem;
+            }
+            
+        }
+    }
+}

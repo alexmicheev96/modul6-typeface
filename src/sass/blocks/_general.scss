@@ -1,0 +1,32 @@
+.name-block {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    margin-bottom: 3.75rem;
+    gap: 8px;
+    min-height: 57px;
+    border-bottom: 1px solid #DBE2EA;;
+    &__digit {
+        color: $muted-color;
+        font-weight: 600;
+    }
+    &__name {
+        color: $primary-color;
+        font-weight: 600;
+    }
+}
+.btn {
+    display: block;
+    border: 2px solid $muted-color;
+    background-color: $bright-color;
+    border-radius: 6px;
+    color: $muted-color;
+    outline: none;
+    min-width: 140px;
+    min-height: 45px;
+    &:hover {
+        color: $bright-color;
+        background-color: $blue-color;
+    }
+}

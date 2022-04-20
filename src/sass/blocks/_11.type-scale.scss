@@ -1,0 +1,13 @@
+.type-scale {
+    &__wrapper {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(385px, 1fr));
+        grid-template-rows: repeat(3, 1fr);
+        gap: 3.75rem 5rem;
+    }
+    &__item {
+        &:nth-child( n + 2) {
+            margin-top: 3.0625rem;
+        } 
+    }
+}

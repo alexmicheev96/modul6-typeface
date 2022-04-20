@@ -1,0 +1,98 @@
+.flaps {
+    &__wrapper {
+    }
+    &__card {
+        border-radius: 1.25rem;
+        &_top {
+            padding: 6%;
+            width: 90%;
+            min-height: 25rem;
+            display: flex;
+            background: $bright-color url('../img/13. Flaps/Artwork.png') right center/contain no-repeat;
+        }
+        &_center {
+            background-color: $bright-color;
+            min-height: 32.5rem;
+            width: 90%;
+            padding: 6%;
+            gap: 7%;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        &_bottom {
+            width: 98%;
+            min-height: 35.1875rem;
+        }
+
+    }
+    &__img-wrapper {
+        flex: 0 1 400px;
+        display: flex;
+        align-items: center;
+        img {
+            display: block;
+            width: 100%;
+        }
+    }
+    &__inner {
+        flex: 0 1 600px;
+        &_center {
+            align-self: center;
+            flex: 0 1 500px;
+        }
+    }
+    &__label {
+        font-weight: 500;
+    }
+    &__title {
+        font-weight: 600;
+        margin-top: 8px;
+    }
+    &__descr {
+        margin: 1em 0 1.2em 0; 
+    }
+    &__btn {
+        display: block;
+        width: 11.25rem;
+        padding: 1.125em 2.5625em;
+        background-color: $blue-color;
+        color: $bright-color;
+        box-shadow: 0px 2px 4px rgba(44, 39, 56, 0.08), 0px 4px 8px rgba(44, 39, 56, 0.08);
+        border-radius: 6px;
+    }
+    &__card-mini {
+        width: 90%;
+        margin-top: 1rem;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(257px, 1fr));
+        grid-template-rows: repeat(2, 250px);
+        gap: 2.5rem 0.8125rem;
+        min-height: 680px;
+        padding: 3.75rem;
+        background-color: $bright-color;
+
+    }
+    &__item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+    }
+    &__icons {
+        width: 160px;
+        height: 160px;
+        img {
+            object-fit: cover;
+            border-radius: 50%;
+        }
+    }
+    &__title-mini {
+        margin-top: 7px;
+        font-weight: 600;
+    }
+    &__descr-mini {
+        margin-top: 8px;
+        text-align: center;
+    }
+}

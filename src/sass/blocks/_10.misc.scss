@@ -1,0 +1,155 @@
+.misc {
+    &__wrapper {
+        width: 55%;
+        display: flex;
+        gap: 11%;
+    }
+    &__items-wrapper {
+        width: 65%;
+        display: flex;
+        gap: 25%;
+    }
+    &__items {
+        list-style-type: none;
+        margin-bottom: 0;
+       
+    }
+    &__item {
+        display: flex;
+        gap: 0.5rem;
+        &:nth-child(n + 2) {
+            margin-top: 1rem;
+        }
+        
+    }
+}
+.items {
+    &__icon {
+        font-size: 23px;
+        color: $blue-color;
+    }
+    &__text {
+        &_medium {
+            font-weight: 500;
+        }
+    }
+    
+}
+
+// .ratings {
+//     &__inner {
+//         display: flex;
+//         width: 154px;
+//         justify-content: flex-start;
+//         align-items: center;
+//         gap: 6px;
+//     }
+//     &__stars {
+        
+//     }
+//     &__area {
+//         overflow: hidden;
+//         width: 125px;
+//         display: flex;
+//         flex-direction: row-reverse;
+//         gap: 6px;
+//         // margin: 0 auto;
+//         &:not(:checked) > input {
+//             display: none;
+//         }
+//         &:not(:checked) > label {
+//             float: right;
+//             width: 20px;
+//             height: 20px;
+//             padding: 0;
+//             cursor: pointer;
+//             font-size: 25px;
+//             line-height: 25px;
+//             color: $shade-color;
+//         }
+//         &:not(:checked) > label::before {
+//             content: '★';
+//             // content: url('../icons/10. Misk/InActiveStar.svg')
+//         }
+//         input:checked ~ label {
+//             color: #FFA200;
+//         }
+//         &:not(:checked) > label:hover, &:not(:checked) > label:hover ~ label {
+//             color: #FFA200;
+//         }
+        
+//     }
+//     &__value {
+//         font-weight: 500;
+//     }
+//     &__text {
+//         margin-top: 8px;
+//     }
+//     .rating__area > input:checked + label:hover,
+//     .rating__area > input:checked + label:hover ~ label,
+//     .rating__area > input:checked ~ label:hover,
+//     .rating__area > input:checked ~ label:hover ~ label,
+//     .rating__area > label:hover ~ input:checked ~ label {
+//     color: gold;
+//     text-shadow: 1px 1px goldenrod;
+//     }
+//     .rate__area > label:active {
+//     position: relative;
+//     }
+// }
+.ratings {
+    display: flex;
+    align-items: flex-end;
+    font-size: 32px;
+    line-height: 0.75;
+    &__body {
+        position: relative;
+        &::before {
+            content: '★★★★★';
+            display: block;
+            color: $shade-color;
+        }
+    }
+    &__active {
+        position: absolute;
+        width: 0%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        overflow: hidden;
+        &::before {
+            content: '★★★★★';
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            color: #ffd300;
+        }
+    }
+    &__items {
+        display: flex;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+    }
+    &__item {
+        flex: 0 0 20%;
+        height: 100%;
+        opacity: 0;
+    }
+    
+    &__value {
+        font-size: 50%;
+        line-height: 1;
+        color: $primary-color;
+        font-weight: 500;
+        padding: 0 0 0 10px;
+    }
+    &__text {
+        margin-top: 8px;
+        font-weight: 500;
+    }
+}

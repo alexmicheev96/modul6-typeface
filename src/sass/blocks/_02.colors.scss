@@ -1,0 +1,55 @@
+.colors {
+    width: 100%;
+    &__wrapper {
+        // display: flex;
+        // flex-wrap: wrap;
+        display: grid;
+        grid-template-columns: repeat(4, 300px);
+        gap: 2.5rem;
+        grid-template-rows: repeat(3, 300px);
+    }
+}
+.colors-block {
+    // height: 300px;
+    padding: 0 0 2.5rem 2.5rem;
+    border-radius: 3em;
+    color: $bright-color;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    cursor: pointer;
+    filter: drop-shadow(0 8px 16px rgba(38, 38, 38, .24)) drop-shadow(0 16px 24px rgba(38, 38, 38, .2));
+    &:nth-child(n + 7) {
+        color: $primary-color;
+    }
+    &_1 {
+        background-color: $blue-color; 
+    }
+    &_2 {
+        background-color: $yellow-color; 
+    }
+    &_3 {
+        background-color: $green-color; 
+    }
+    &_4 {
+        background-color: $pink-color; 
+    }
+    &_5 {
+        background-color: $primary-color; 
+    }
+    &_6 {
+        background-color: $secondary-color; 
+    }
+    &_7 {
+        background-color: $muted-color; 
+    }
+    &_8 {
+        background-color: $bright-color; 
+    }
+    &_9 {
+        background-color: $shade-color; 
+    }
+    &_10 {
+        background-color: $tint-color; 
+    }
+}

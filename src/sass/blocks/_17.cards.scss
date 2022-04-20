@@ -1,0 +1,111 @@
+.cards {
+    
+    &__wrapper  {
+        width: 78%;
+    }
+    &__items-big {
+        display: flex;
+        gap: 3.75rem;
+        flex-wrap: wrap;
+    }
+    &__items-mini {
+        display: flex;
+        gap: 3.75rem;
+        flex-wrap: wrap;
+        
+    }
+    &__item {
+        position: relative;
+        flex: 0 0 300px;
+        box-shadow: 0px 12px 24px rgba(44, 39, 56, 0.02), 0px 24px 48px rgba(44, 39, 56, 0.04);
+        border-radius: 1.5rem;
+        padding: 1rem 1rem 1.875rem;
+        &_bcg {
+            background: url('../img/17. Cards/Card-bgVertical.png') center center/cover no-repeat ;
+            display: flex;
+            min-height: 300px;
+            align-items:flex-end;
+        }
+        &_mini {
+            max-height: 224px;
+            padding: 1.875rem 1.25rem;
+        }
+    }
+    &__img {
+        width: 100%;
+        img {
+            display: block;
+            width: 100%;
+            border-radius: 1rem;
+        }
+    }
+    &__inner {
+        margin-top: 1.25em;
+        &_mini {
+            margin-top: 0;
+        }
+    }
+    &__title {
+        font-weight: 700;
+    }
+    &__descr {
+        margin-top: 0.5em;
+    }
+    &__btn {
+        margin-top: 1.68em;
+        border: 1px solid $shade-color;
+        box-shadow: 0px 2px 4px rgba(44, 39, 56, 0.0001), 0px 4px 8px rgba(44, 39, 56, 0.08);
+    }
+    &__dots {
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        width: 4px;
+        height: 18px;
+        gap: 3px;
+        top: 22px;
+        right: 22px;
+        cursor: pointer;
+        &:hover {
+            span {
+                background-color: $primary-color;
+            }
+        }
+        span {
+            background-color: $bright-color;
+            border-radius: 50%;
+            width: 4px;
+            height: 4px;
+        }
+    }
+
+.cards-mini {
+    display: flex;
+    gap: 3.75rem;
+    flex-wrap: wrap;
+    &__item {
+        position: relative;
+        flex: 0 0 260px;
+        min-height: 240px;
+        display: flex;
+        align-items:flex-end;
+        padding: 0 1.25rem 2.125rem;
+        box-shadow: 0px 12px 24px rgba(44, 39, 56, 0.02), 0px 24px 48px rgba(44, 39, 56, 0.04);
+        border-radius: 20px;
+    }
+    &__inner {
+    }
+    &__dots {
+
+    }
+    &__label {
+        opacity: 0.72;
+    }
+    &__title {
+        font-weight: 700;
+    }
+    &__descr {
+        margin-top: 0.5em;
+    }
+}
+}

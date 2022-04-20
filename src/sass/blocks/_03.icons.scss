@@ -1,0 +1,34 @@
+.icons {
+    &__wrapper {
+        border-radius: 1em;
+        padding: 1.875rem 1.5rem;
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+        &:nth-child(n + 2) {
+            margin-top: 2.5rem;
+        }
+        
+        &_1 {
+            background-color: $bright-color;
+            .icons__img {
+                color: $blue-color;
+            }
+        }
+        &_2 {
+            background-color: $muted-color;
+            .icons__img {
+                color: $bright-color;
+            }
+        }
+        &_3 {
+            background-color: $bright-color;
+            .icons__img {
+                color: $primary-color;
+            }
+        }
+    }
+    &__img {
+        font-size: 25px;
+    }
+}

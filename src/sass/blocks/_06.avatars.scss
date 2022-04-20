@@ -1,0 +1,42 @@
+.avatars {
+    &__wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1.875rem;
+    }
+    &__item {
+        flex: 0 0 56px;
+        cursor: pointer;
+        &_round {
+            border-radius: 50%
+        }
+        &_rect {
+            border-radius: 6px 
+        }
+    }
+    &__img {
+        object-fit: cover;
+    }
+    &__color-1 {
+        background-color: #FA78CD;
+    }
+    &__color-2 {
+        background-color: #F0705F;
+    }
+    &__color-3 {
+        background-color: #7199FF;
+    }
+    &__color-4 {
+        background-color: #FFD05A;
+    }
+    &__color-5 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 56px;
+        background: #7C9CBF;
+        box-shadow: 0px 2px 4px rgba(44, 39, 56, 0.04), 0px 4px 8px rgba(44, 39, 56, 0.08);
+        color: $bright-color;
+        opacity: 0.86;
+    }
+}

@@ -1,0 +1,29 @@
+.callouts {
+    width: 60%;
+    position: relative;
+    padding: 2.5rem;
+    min-height: 290px;
+    &__btn-wrapper {
+        justify-content: flex-start;
+        &_mini {
+            margin-top: 0;
+        }
+    }
+    &__mini {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1rem;
+        min-height: 80px;
+
+    }
+    &__descr {
+        &_mini {
+            margin-top: 0;
+        }
+    }
+    &_shade-color {
+        background-color: $shade-color;
+    }
+    
+}
