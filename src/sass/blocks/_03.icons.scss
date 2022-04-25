@@ -1,13 +1,17 @@
 .icons {
     &__wrapper {
+        display: flex;
+        // flex-wrap: wrap;
+        gap: 1rem;
+
+    }
+    &__inner {
+        flex: 0 0 32%;
         border-radius: 1em;
         padding: 1.875rem 1.5rem;
         display: flex;
         flex-direction: column;
         gap: 1.5rem;
-        &:nth-child(n + 2) {
-            margin-top: 2.5rem;
-        }
         
         &_1 {
             background-color: $bright-color;

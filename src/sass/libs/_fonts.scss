@@ -25,18 +25,18 @@
     font-weight: 600;
     font-style: normal;
 }
+
 @font-face {
   font-family: 'icomoon';
-  src:  url('../fonts/icomoon.eot?to5hcz');
-  src:  url('../fonts/icomoon.eot?to5hcz#iefix') format('embedded-opentype'),
-    url('../fonts/icomoon.ttf?to5hcz') format('truetype'),
-    url('../fonts/icomoon.woff?to5hcz') format('woff'),
-    url('../fonts/icomoon.svg?to5hcz#icomoon') format('svg');
+  src:  url('../fonts/icomoon.eot?kr4b0s');
+  src:  url('../fonts/icomoon.eot?kr4b0s#iefix') format('embedded-opentype'),
+    url('../fonts/icomoon.ttf?kr4b0s') format('truetype'),
+    url('../fonts/icomoon.woff?kr4b0s') format('woff'),
+    url('../fonts/icomoon.svg?kr4b0s#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
 }
-
 
 [class^="icon-"], [class*=" icon-"] {
   /* use !important to prevent issues with browser extensions that change fonts */
@@ -55,6 +55,9 @@
 
 .icon-th-menu:before {
   content: "\e90e";
+}
+.icon-alert-triangle:before {
+  content: "\e90f";
 }
 .icon-arrow-left:before {
   content: "\e900";
@@ -100,12 +103,6 @@
 }
 .icon-stop2:before {
   content: "\ea1e";
-}
-.icon-arrow-right:before {
-  content: "\e901";
-}
-.icon-arrow-up:before {
-  content: "\e902";
 }
 .icon-git-square:before {
   content: "\e90d";

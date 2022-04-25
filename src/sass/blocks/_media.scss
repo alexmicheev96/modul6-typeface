@@ -84,14 +84,14 @@
         &__list {
             gap: 1rem;
         }
-        &__item {
-            &_left {
-                gap: 1rem;
-            }
-            &_2 {
-                margin-top: 2.5rem;
-            }
-        }
+        // &__item {
+        //     &_left {
+        //         gap: 1rem;
+        //     }
+        //     &_2 {
+        //         margin-top: 2.5rem;
+        //     }
+        // }
     }
     .flaps {
         &__card {
@@ -156,7 +156,10 @@
     }
     .headers {
         &__item {
-            padding: 0 0.5rem;
+            display: none;
+            &_1 {
+                display: flex;
+            }
         }
     }
     .flaps {
@@ -238,6 +241,20 @@
             grid-template-rows: repeat(5,130px)
         }
     }
+    .icons {
+        &__wrapper {
+            justify-content: center;
+        }
+        &__img {
+            font-size: 20px;
+            display: flex;
+            justify-content: center;
+        }
+        &__inner {
+            flex: 0 0 25%;
+            padding: 1rem;
+        }
+    }
     .form {
         &__inner {
             gap: 1rem;
@@ -265,7 +282,7 @@
     }
     .button {
         &__items {
-            justify-content: center;
+            gap: 1rem;
         }
     }
     .alert, .spinner, .avatars {

@@ -14,6 +14,22 @@ document.addEventListener("DOMContentLoaded", () => {
   //         menu.classList.toggle('nav-menu__list_active');
   //     });
   // });
+   //степпер 
+   const plus  = document.querySelector('.stepper__block_plus');
+   const minus  = document.querySelector('.stepper__block_minus');
+   const count = document.querySelector('.stepper__block_number');
+
+   plus.addEventListener('click', ()=> {
+     if( +count.innerHTML >= 0 ) {
+       count.innerHTML++;
+     }
+   });
+   minus.addEventListener('click', ()=> {
+     if( +count.innerHTML > 0 ) {
+       count.innerHTML--;
+     }
+   });
+// звездный рейтинг
   const multiDefault = () => {
     const element = document.querySelectorAll(".form__select");
 

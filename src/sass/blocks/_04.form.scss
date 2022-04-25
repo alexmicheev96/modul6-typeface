@@ -26,7 +26,7 @@
 
             &_3 {
                 &::placeholder {
-                    background: url('../icons/04. Form/Alert.png')  100% 50%/25px no-repeat;
+                    background: url('../icons/04. Form/Alert.svg')  100% 50%/25px no-repeat;
                     background-position: 100% 50%;
                 }
             }
@@ -222,6 +222,13 @@
         align-items: center;
         background: #FFFFFF;
         flex: 0 0 33%;
+        outline: none;
+        border: none;
+        &_value {
+            flex: 0 0 33%;
+            border: none;
+        }
+        
 
         &_minus {
             border-radius: 6px 0 0 6px;
@@ -231,10 +238,18 @@
             color: $primary-color;
             border-right: 1px solid $shade-color;
             border-left: 1px solid $shade-color;
+            width: 60px;
+            text-align: center;
         }
 
         &_plus {
             border-radius: 0 6px 6px 0;
+        }
+        &_plus, &_minus {
+            &:hover {
+                background-color: $blue-color;
+                color: $bright-color;
+            }
         }
 
     }
@@ -542,8 +557,9 @@
     &__item {
         display: flex;
         align-items: center;
-        justify-content: center;
-        gap: 10px;
+        justify-content: space-between;
+        padding: 0.5em 0.8em;
+        // gap: 10px;
         width: 90px;
         height: 33px;
         background: #FFFFFF;
@@ -558,6 +574,7 @@
     }
     &__close {
         color: $bright-color;
+        font-size: 1rem;
     }
     &__other-color {
         color: $muted-color;
@@ -597,15 +614,46 @@
         border-radius: 3px;
         color: $muted-color;
         font-weight: 500;
+        
+        &:hover {
+            border: 1px solid $bright-color;
+            box-shadow: 0px 6px 12px rgba(44, 39, 56, 0.04), 0px 12px 24px rgba(44, 39, 56, 0.08);
+        }
+        &:active {
+            outline: none;
+            border: 1px solid #0880AE;
+            box-shadow: 0px 2px 4px rgba(44, 39, 56, 0.0001), 0px 2px 4px rgba(44, 39, 56, 0.08);
+        }
+        &_other-color {
+            border: 1px solid $muted-color;
+            background-color: $tint-color;
+            &:hover {
+                border: 1px solid $blue-color;
+                color: $blue-color;
+                
+            }
+            &:active {
+                color: $secondary-color;
+                border: 1px solid $secondary-color;
+            }
+        }
         &_average {
             padding: 0.875em 2.81em;
+            border-radius: 6px;
         }
         &_big {
             padding: 1.125em 4.06em;
+            border-radius: 6px;
         }
         &_blue {
             background-color: $blue-color;
             color: $bright-color;
+            border: 1px solid $blue-color;
+            &:active {
+                border: 1px solid rgba(44, 39, 56, 0.86);
+                box-shadow: 0px 2px 4px rgba(44, 39, 56, 0.0001), 0px 2px 4px rgba(44, 39, 56, 0.08);
+            }
+
         }
     }
 }
@@ -633,6 +681,10 @@
     }
     &__close {
         color: $bright-color;
+        font-size: 1.5625rem;
+    }
+    &__other-color {
+        color: $blue-color;
     }
 }
 .progress-bar {
