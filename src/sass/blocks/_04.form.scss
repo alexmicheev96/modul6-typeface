@@ -228,6 +228,12 @@
             flex: 0 0 33%;
             border: none;
         }
+        &_active {
+            &:hover {
+                background-color: $blue-color;
+                color: $bright-color;
+            }
+        }
         
 
         &_minus {
@@ -245,12 +251,7 @@
         &_plus {
             border-radius: 0 6px 6px 0;
         }
-        &_plus, &_minus {
-            &:hover {
-                background-color: $blue-color;
-                color: $bright-color;
-            }
-        }
+        
 
     }
 

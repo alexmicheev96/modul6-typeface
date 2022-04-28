@@ -18,7 +18,6 @@ document.addEventListener("DOMContentLoaded", () => {
    const plus  = document.querySelector('.stepper__block_plus');
    const minus  = document.querySelector('.stepper__block_minus');
    const count = document.querySelector('.stepper__block_number');
-
    plus.addEventListener('click', ()=> {
      if( +count.innerHTML >= 0 ) {
        count.innerHTML++;
