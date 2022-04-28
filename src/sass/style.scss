@@ -37,8 +37,8 @@ body {
 }
 .container {
     position: relative;
-    width: 1440px;
-    padding: 0 60px;
+    max-width: 1350px;
+    padding: 0 15px;
     margin: 0 auto;
 }
 .hide {

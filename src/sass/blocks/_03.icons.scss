@@ -1,17 +1,20 @@
 .icons {
     &__wrapper {
-        display: flex;
+        display: grid;
+        grid-template-columns: repeat(auto-fit , minmax(250px, 1fr) );
+        justify-self: center;
         // flex-wrap: wrap;
         gap: 1rem;
 
     }
     &__inner {
-        flex: 0 0 32%;
+        // flex: 0 0 33%;
         border-radius: 1em;
         padding: 1.875rem 1.5rem;
         display: flex;
-        flex-direction: column;
-        gap: 1.5rem;
+        // flex-direction: column;
+        // gap: 1.5rem;
+        justify-content: space-around;
         
         &_1 {
             background-color: $bright-color;
